@@ -1,0 +1,77 @@
+# Is it a retweet
+retweet: -10
+
+#How yelly is it
+caplocks: -15
+
+#terrible words lot
+douche: 
+- phrase: lol
+  score: -10
+- phrase: omg
+  score: -10
+- phrase: rotfl
+  score: -50
+- phrase: haha
+  score: -10
+- phrase: balls
+  score: -100
+
+# days of the week
+days:
+  Monday: 5
+  Tuesday: 0
+  Wednesday: 0
+  Thursday: 0
+  Friday: 10
+  Saturday: 5
+  Sunday: 5
+
+# Time of day
+times:
+  0: 0
+  1: 0
+  2: 0
+  3: 0
+  4: 0
+  5: 0
+  7: 0
+  8: 0
+  9: 0
+  10: 0
+  11: 0
+  12: 0
+  13: 0
+  14: 0
+  15: 0
+  16: 0 
+  17: 0
+  18: 0
+  19: 0 
+  20: 0
+  21: 0
+  22: 0
+  23: 0
+
+#does it have a url
+url: 30
+
+# list of blacklisted domains 
+baddomains:
+- dom: facebook.com
+  score: -50
+- dom: instagram.com
+  score: -100
+- dom: google.com
+  score: -10
+
+# phrases of interest
+phrases: 
+- phrase: hacked
+  score: 10
+- phrase: balls
+  score: 10
+- phrase: antitree
+  score: 10
+- phrase: the dan kaminskys
+  score: 9001 
