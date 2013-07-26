@@ -1,5 +1,6 @@
 #!/usr/bin/python
-# 9TAT4
+#Timeliner
+# @antitree 2013
 
 import sys
 sys.path.append("lib")
