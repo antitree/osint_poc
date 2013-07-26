@@ -22,10 +22,6 @@ import sys
 CONSUMER_KEY = ''
 CONSUMER_SECRET = ''
 
-##TODO: Save this externally
-CONSUMER_KEY = 'ySWcpStNQb5pHoycFz3l6A'
-CONSUMER_SECRET = '6DkVEPNl0EFEsLkdyx8rrnmqMVTrxDq713LPZgCE'
-
 if CONSUMER_KEY == '':
     print("No consumer key - RTFM: Details in beginning of the script")
     quit()
