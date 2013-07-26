@@ -35,9 +35,6 @@ ACCESS_TOKEN_URL = "https://api.twitter.com/oauth/access_token"
 OAUTH_TOKEN =  ''
 OAUTH_TOKEN_SECRET = ''
  
-OAUTH_TOKEN =  '220462504-hxNQIFvxDcN0NJuxfl59NbrnZ5UoAkXEKGO5XADY'
-OAUTH_TOKEN_SECRET = 'BIM84g1tIvuEHbDWmekFs52F032DZdHdcddcpvoBo'
-
 ############
 AUTH = ''
 alert = [] 
