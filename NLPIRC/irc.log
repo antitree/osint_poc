@@ -1,0 +1,50 @@
+--- Log opened Tue Dec 11 20:27:32 2012
+20:27 < giantpune> http://forum.xda-developers.com/showthread.php?t=1941566
+20:27 < giantpune> its a Sico, whoever that is
+20:28 < jcase> http://dl.dropbox.com/u/8699733/private/optimusg/adbd
+20:28 < jcase> optimus G, not sure if it was from the at&t or sprint one
+20:30 < jcase> giantpune, zero byte file at /sdcard/G_security/G_security nor /sdcard/G_security work
+20:33 < giantpune> looks like it should
+20:34 < giantpune> next time you have somebody try it, have them get the dmesg again
+20:34 < jcase> is the error in dmesg or
+20:34 < jcase> logcat?
+20:34 < giantpune> dmesg usually.
+20:35 < jcase> ah ok
+20:35 < jcase> might be why no error was seen
+20:36 < jcase> lol nm
+20:36 < jcase> it does work
+20:36 < jcase> lol nice
+20:36 < giantpune> if the fopen() is successful, this will be the message    check_LGE_official: enable_root = %d, size = %d"
+20:36 < giantpune> and obviously size will be 0 :D
+20:36 < jcase> yeah i see that
+20:38 < jcase> giantpune, nifty
+20:38 < giantpune> for tose of you playing the game along at home, this is where the mistake is.   http://pastie.org/private/oj2k2vudcltnq9q7arabda
+20:39 < jcase> mistake is the existance of it at all lol
+20:39 < jcase> that one is just gravy
+20:40 < giantpune> even if it doesnt work with an empty key, you can still bruteforce it
+20:40 < giantpune> because dmesg tells you if it matches or not
+20:41 < jcase> yeah
+20:42 < jcase> giantpune, on earilier lg firmware, "adb root" alone was enough
+20:43 < giantpune> i see in my init.rc, they had a "hidden rooting feature" in other earlier models
+20:44 < jcase> lol
+20:44 < jcase> yes on one model there was a dial code
+20:44 < jcase> that did it as well
+20:44 < giantpune> ##root*
+20:44 < jcase> i dont recall
+20:44 < jcase> possibly
+20:46 < giantpune> this is the leftovers from their past hidden rotting stuff.   http://pastie.org/private/pjuhwzo8jz1qncwko7tj4q
+20:46 < giantpune> and i love their use of #ifdef inside the init.rc
+20:48 < jcase> heh
+20:53 -!- cipher [~user@unaffiliated/mshield] has quit [Ping timeout: 264 seconds]
+21:29 -!- G13 [~me@cpe-69-207-134-129.rochester.res.rr.com] has quit [Quit: Leaving]
+23:05 <@jduck> im suddenly feeling like i need to possess a bunch of breakout boards for different connectors lol
+23:08 <@jduck> not to mention SD and SIM emulators
+23:14 < ius> Some shim-like thingies would be nice
+23:15 < ius> Physical connection is the hard part, at least for sd, given its just SPI :(
+23:18 < ius> Thomas Cannon demoed some nice sd/sim hardware hacks for a HTC unlock (Xclip 'clone' I guess..) at BH/DC2012 I think (but you've probably seen that)
+23:28 < jcase> XTC clip is a neat little device
+23:28 < jcase> dirt cheap now
+23:37 < ius> Unless your device lacks a SD slot.
+23:45 < jcase> well, maybe
+23:45 < jcase> if you had hte proper diag files
+23:46 < jcase> the sdcard part would be averted
