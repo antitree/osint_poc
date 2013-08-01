@@ -1,3 +1,4 @@
+#!/usr/bin/python
 ## TweetCollect.py
 ## POC Used to collect tweets using the 1.1 Twitter API. 
 ## Besides just downloading the tweets, they are individually
